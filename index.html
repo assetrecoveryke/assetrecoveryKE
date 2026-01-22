@@ -28,13 +28,33 @@
 </script>
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0;font-family:Segoe UI,Arial,sans-serif;}
-body{background:#0b1522;color:#fff;line-height:1.75;}
-header{background:#0f2138;padding:20px 6%;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:9;}
+*{animation:floatIn .8s ease forwards;
+}
+
+@keyframes floatIn{
+from{opacity:0;transform:translateY(30px);}
+to{opacity:1;transform:translateY(0);}
+}
+body{background:url('https://cdn.create.vista.com/api/media/small/164203438/stock-photo-legal-system-law-and-justice-concept') center/cover fixed no-repeat;
+color:#fff;
+line-height:1.75;
+}
+header{background:rgba(10,20,40,.65);
+backdrop-filter:blur(8px);
+padding:20px 6%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+position:sticky;
+top:0;
+z-index:9;}
 nav a{color:#fff;text-decoration:none;margin-left:18px;font-size:14px;font-weight:600;}
 nav a:hover{color:#39b8ff;}
 .logo{display:flex;align-items:center;gap:10px;font-size:22px;font-weight:800;}
-.section{padding:90px 6%;}
+.section{padding:90px 6%;
+background:rgba(0,0,0,0.35);
+backdrop-filter:blur(6px);
+}
 .hero{
 background:url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f') center/cover no-repeat fixed;
 min-height:100vh;
@@ -42,11 +62,22 @@ padding:120px 6%;
 display:flex;
 align-items:center;
 }
-.hero-overlay{background:rgba(11,21,34,.9);padding:70px;border-radius:18px;max-width:950px;}
+.hero-overlay{background:rgba(10,15,30,.55);
+backdrop-filter:blur(8px);
+padding:70px;
+border-radius:22px;
+max-width:950px;
+box-shadow:0 20px 40px rgba(0,0,0,.6);
+}
 h1{font-size:46px;margin-bottom:20px;}
 h2{font-size:32px;margin-bottom:25px;}
 .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;}
-.card{background:#13263f;padding:30px;border-radius:14px;}
+.card{background:rgba(20,30,55,0.55);
+backdrop-filter:blur(10px);
+padding:30px;
+border-radius:16px;
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
 .btn{background:#39b8ff;color:#001018;padding:14px 32px;border-radius:30px;font-weight:800;text-decoration:none;display:inline-block;margin-top:25px;}
 footer{background:#08101a;padding:40px;text-align:center;font-size:14px;opacity:.9;}
 small{opacity:.75;display:block;margin-bottom:20px;}
